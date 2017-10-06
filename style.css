@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #161616;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: 'Lobster', cursive;
+  color: green;
+}
+
+h3 {
+  font-family: 'Lobster', cursive;
+  color: Purple;
+}
+
+.body {
+  /*основной слой */
+  margin: 0 auto;
+  /*border: solid 3px green;*/
+  width: 963px;
+  padding-left: 0px;
+  padding-right: 0px;
+  position: relative;
+}
+
+.header {
+  position: fixed;
+  background: pink;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 0px;
+  width: 960px;
+  height: 80px;
+  font-size:18px;
+  /*border: solid 3px black;*/
+}
+
+.header-nav {
+  position: absolute;
+  height: auto;
+  /* background: gray;*/
+  left: 500px;
+  top: 44px;
+}
+
+.container {
+  /*border: solid 3px red;*/
+  width: 960px;
+  padding-top: 100px;
+  /*увеличение верхнего отступа позволит не перекрывать значения слоя cjntainer слоем header */
+  padding-left: 10px;
+  padding-right: 0px;
+  left: 0px;
+  top: 100px;
+}
+
+.section {
+  /*border: solid 3px red;*/
+  width: 700px;
+  padding-left: 10px;
+  padding-right: 0px;
+}
+
+.article {
+  /*border: solid 3px brown;*/
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 680px;
+  height: 200px;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow: auto;
+}
+
+.sidebar {
+  /*border: solid 3px purple;*/
+  margin: 0 auto;
+  width: 240px;
+  height: 400px;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow: auto;
+  position: absolute;
+  top: 100px;
+  right: 0px;
+}
+
+.footer {
+  /*border: solid 3px black;*/
+  margin: 0 auto;
+  width: 960px;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: pink;
+}
+
+
+/*experiments with position*/
+
+.position-parent {
+  width: 200px;
+  height: 300px;
+  background: pink;
+  position: relative;
+  margin: 150px;
+}
+
+.position-child {
+  height: 300px;
+  background: violet;
+  position: relative;
+  left: 100px;
+  top: 100px;
+}
+
+.position-child-absolute {
+  width: 100px;
+  height: 300px;
+  background: gray;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+
+.position-child-fixed {
+  width: 100px;
+  height: 300px;
+  background: yellowgreen;
+  position: fixed;
+  left: 100px;
+  top: 100px;
+}
+
+.position-child-z-index {
+  width: 100px;
+  height: 300px;
+  background: purple;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+
+z-index-1 {
+  left: 50px;
+  top: 50px;
+  opacity: 0.5;
+  background: red;
+  z-index: 3;
+}
+
+z-index-2 {
+  left: 100px;
+  top: 100px;
+  opacity: 0.3;
+  background: green;
+  z-index: 2;
+}
+
+z-index-3 {
+  left: 150px;
+  top: 150px;
+  opacity: 0.1;
+  background: blue;
+  z-index: 1;
+}
+
+.font {
+  padding: 100px 0;
+}
+
+.font-size {
+  font-size: 30px;
+}
+
+.font-weight {
+  font-weight: 700;
+}
+
+.font-style {
+  font-style: italic;
+}
+
+.font-variant {
+  font-variant: small-caps;
+}
+
+.text-shadow {
+  text-shadow: 5px 5px 1px gray;
+}
