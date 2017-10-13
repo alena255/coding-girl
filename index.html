@@ -1,11 +1,12 @@
 <!doctype html>
-<html>
+<!--html-->
 
 <head lang="ru">
 
   <!-- заголовок документа -->
   <title>ПРОЕКТ coding girl</title>
-  <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=cyrillic" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -13,39 +14,37 @@
 <body>
   <!-- тело документа-->
   <div class="body">
-    <header>
-      <div class="header">
-        <h1>Название сайта</h1>
-        <div class="header-nav">
-          <nav>
-            <a href="index.html#article-2">Главная</a>
-            <a href="article.html">Первая статья</a>
-            <a href="article2.html">Вторая статья</a>
-            <a href="contacts.html">Контакты</a>
-          </nav>
-        </div>
+    <header class="header">
+      <div class="header__section">
+        <h1 class="header_name">Мой сайт</h1>
       </div>
+      <nav class="header__section">
+        <a href="components.html" class="header_item">События</a>
+        <a href="gallery.html" class="header_item">Галерея</a>
+        <a href="contacts.html" class="header_item">Контакты</a>
+      </nav>
     </header>
 
     <main>
 
       <div class="container">
-        <section class="section">
+        <section class="main_section">
           <h2>Заголовок на главной странице</h2>
 
-          <aside class="sidebar">
-            <p><a href="popular.html">внешняя ссылка1</a></p>
-            <p><a href="day.html">внешняя ссылка2</a></p>
-            <p><a href="apple.html">внешняя ссылка3</a></p>
-            <p><a href="ice.html">внешняя ссылка3</a></p>
+          <aside class="aside">
+           <h2>Интересное</h2>
+           <p><b><a href="https://daily.afisha.ru/brain/4402-test-vnimatelnyy-li-vy-chelovek/" target="_blank" class="aside_link">Брейнхак</a></b></p>
+            <p><a href="day.html" class="aside_link">внешняя ссылка2</a></p>
+            <p><a href="apple.html" class="aside_link">внешняя ссылка3</a></p>
+            <p><a href="ice.html" class="aside_link">внешняя ссылка3</a></p>
           </aside>
 
           <article class="article">
             <h3> Заголовок первой статьи</h3>
-            <!--a href="https://daily.afisha.ru/brain/4402-test-vnimatelnyy-li-vy-chelovek/" target="_blank">ссылка на статью</a-->
+
             <p><strong>«Дерево кодов»</strong> — это не <em>(совсем)</em> самостоятельный текст. За основу автор взял повесть польского писателя и художника Бруно Шульца «Улица Крокодилов». Фоер не просто переработал книгу Шульца: он разрушил ее до основания
               и собрал заново, в лучших традициях <i>деконструктивизма/сюрреализма/дадаизма</i> (нужное подчеркнуть), используя повторы слов и смыслов, которые торчат/просвечивают сквозь прямоугольные дыры из соседних страниц, как блоки в Тетрисе.</p>
-            <a href="#article-1">Первая статья</a>
+            <a href="#article-1">Читать далее...</a>
           </article>
 
           <article class="article">
@@ -53,16 +52,21 @@
             <p>Чисто технически создать такую книгу (пересечение — или скорее столкновение — литературы и визуального искусства) настолько сложно, что автору так и не удалось найти издателя в Америке.</p>
             <p>В итоге лишь одно — <b>бельгийское!</b> — издательство «Die Keure» согласилось напечатать его роман (или скорее — инсталляцию/скульптуру (нужное подчеркнуть)). Собирать и снабжать иллюстрациями это чудо издательской/дизайнерской мысли Дж.С.Фоеру
               помогала бельгийская же художница и дизайнер Сара де Бондт (Sara De Bondt).</p>
-            <a href="#article-2">Вторая статья</a>
+            <a href="#article-2">Читать далее...</a>
           </article>
         </section>
       </div>
 
       <footer class="footer">
-        <p>Это подвал, он пока что пустой</p>
+        <div class="footer__section">
+          <p class="footer_item">Это перая секция подвала</p>
+        </div>
+        <div class="footer__section">
+          <p class="footer_item">Это вторая секция подвала</p>
+        </div>
       </footer>
 
     </main>
   </div>
 </body>
-</html>
+<!--/html-->

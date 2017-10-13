@@ -9,81 +9,95 @@ body {
   margin: 0;
   padding: 0;
 }
-
 h2 {
-  font-family: 'Lobster', cursive;
+  font-family: 'Lobster';
   color: green;
 }
-
 h3 {
-  font-family: 'Lobster', cursive;
+  font-family: 'Lobster';
   color: Purple;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  /*убрать подчёркивание*/
 }
 
 .body {
   /*основной слой */
   margin: 0 auto;
   /*border: solid 3px green;*/
-  width: 963px;
+  width: 100%;
+   /*растягивается на весь экран*/
   padding-left: 0px;
+  /*нет отступов слева*/
   padding-right: 0px;
+  /*нет отступов справа*/
   position: relative;
 }
 
 .header {
   position: fixed;
   background: pink;
-  margin: 0 auto;
+  margin: 0;
   padding-left: 20px;
   padding-right: 0px;
-  width: 960px;
-  height: 80px;
-  font-size:18px;
+  width: 100%;
+  height: 100px;
   /*border: solid 3px black;*/
+  display: flex;
+  justify-content: space-between;
 }
 
-.header-nav {
-  position: absolute;
-  height: auto;
-  /* background: gray;*/
-  left: 500px;
-  top: 44px;
+.header__section {
+  display: flex;
+  align-items: center;
+}
+
+.header_item {
+  padding: 10px 15px;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.header_item:hover {
+  background-color: tomato;
+  border-radius: 4px;
+  transition: 1s linear 50ms;
 }
 
 .container {
-  /*border: solid 3px red;*/
-  width: 960px;
+  /*border: solid 3px navy;*/
+  width: 100%;
   padding-top: 100px;
-  /*увеличение верхнего отступа позволит не перекрывать значения слоя cjntainer слоем header */
+  /*увеличение верхнего отступа позволит не перекрывать значения слоя container слоем header */
   padding-left: 10px;
   padding-right: 0px;
   left: 0px;
   top: 100px;
 }
 
-.section {
+.main_section {
   /*border: solid 3px red;*/
-  width: 700px;
+  width: 80%;
   padding-left: 10px;
   padding-right: 0px;
 }
-
 .article {
   /*border: solid 3px brown;*/
   margin: 0 auto;
   margin-bottom: 20px;
-  width: 680px;
+  width: 80%;
   height: 200px;
   padding-left: 10px;
   padding-right: 10px;
   overflow: auto;
 }
-
-.sidebar {
+.aside {
   /*border: solid 3px purple;*/
   margin: 0 auto;
-  width: 240px;
-  height: 400px;
+  width: 20%;
+  height: 500px;
   padding-left: 10px;
   padding-right: 10px;
   overflow: auto;
@@ -91,17 +105,30 @@ h3 {
   top: 100px;
   right: 0px;
 }
+.aside_link{
+ color: tomato;
+ padding: 5px 5px;
+}
+.aside_link:hover{
+ border: 2px solid tomato;
+ transition: 20ms linear 20ms;
+}
 
 .footer {
   /*border: solid 3px black;*/
   margin: 0 auto;
-  width: 960px;
-  height: 50px;
-  padding-left: 10px;
-  padding-right: 10px;
+  width: 100%;
+  height: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
   background: pink;
+  display: flex;/* обозначен контейнер для footer*/
+  justify-content: space-between; /*выравнивание секций по горизонтали*/
 }
-
+.footer__section{
+  display: flex; /*обозначен контейнер для секции footer*/
+  align-items: flex-end; /*указано выравнивание по нижнему краю внутри секции*/
+}
 
 /*experiments with position*/
 
