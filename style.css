@@ -1,3 +1,4 @@
+@import url("grid.css");
 * {
   box-sizing: border-box;
 }
@@ -47,6 +48,7 @@ a {
   /*border: solid 3px black;*/
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .header__section {
@@ -221,4 +223,175 @@ z-index-3 {
 
 .text-shadow {
   text-shadow: 5px 5px 1px gray;
+}
+/*transform: translate*/
+.transform-parent{
+  display: flex;
+  margin: 50px;
+}
+.translate-parent{
+  width: 300px;
+  height: 200px;
+  background-color: gray;
+  margin: 100px;
+  position: relative;
+}
+.translate-child{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  top: 0;
+  left: 0;
+  position: absolute;
+  border: 2px solid black;
+}
+.translate-child-1{
+  transform: translate(100px,100px);
+}
+.translate-child-2{
+  transform: translate(-50px,-80px);
+}
+/*rotate*/
+.rotate-parent{
+  width: 300px;
+  height: 200px;
+  background-color: gray;
+  margin: 100px;
+  position: relative;
+}
+.rotate-child{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  top: 0;
+  left: 0;
+  position: absolute;
+  border: 2px solid black;
+}
+.rotate-child-1{
+  transform: rotate(100deg);
+}
+.rotate-child-2{
+  transform: rotate(-30deg);
+}
+/*scale*/
+.scale-parent{
+  width: 300px;
+  height: 200px;
+  background-color: gray;
+  margin: 100px;
+  position: relative;
+}
+.scale-child{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  top: 0;
+  left: 0;
+  position: absolute;
+  border: 2px solid black;
+}
+.scale-child-1{
+  transform: scale(2.5);
+}
+.scale-child-2{
+  transform: scale(-1, 0.5);
+}
+/*skew*/
+.skew-parent{
+  width: 300px;
+  height: 200px;
+  background-color: gray;
+  margin: 100px;
+  position: relative;
+}
+.skew-child{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  top: 0;
+  left: 0;
+  position: absolute;
+  border: 2px solid black;
+}
+.skew-child-1{
+  transform: skew(-70deg);
+}
+.skew-child-2{
+  transform: skew(-1deg, 0.5deg);
+}
+/*transform-origin*/
+.transform-origin-parent{
+  width: 300px;
+  height: 200px;
+  background-color: gray;
+  margin: 100px;
+  position: relative;
+}
+.transform-origin-child{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  top: 0;
+  left: 0;
+  position: absolute;
+  border: 2px solid black;
+  transform: rotate(45deg);
+  transform-origin: 100%, 50%;
+}
+/*animation*/
+.animation-1{
+  width: 300px;
+  height: 300px;
+  border: 2px dashed black;
+  background-color: green;
+  animation-name: animation-bg-color;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+.animation-1:hover{
+  animation-play-state: paused;
+}
+@keyframes animation-bg-color{
+  from{
+    background-color: yellow;
+    transform: translate(0,0);
+    box-shadow: 0 0 5px 5px white;
+  }
+  to{
+    background-color: blue;
+    transform: translate(200px,300px);
+    width: 300px;
+    box-shadow: 0 0 50px 50px white;
+
+  }
+}
+.animation-2{
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  animation-name: animation-rotate;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: alternate-reverse;
+  animation-delay: 1s;
+  margin: 50px;
+}
+@keyframes animation-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  50%{
+    transform: rotate(-90deg);/*докрутится в обратную сторону на 90градусов*/
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/**/
+.toggled{
+  background-color: red;
 }
